@@ -528,6 +528,10 @@ body {
   width: 264px;
 }
 
+.page-footer-social {
+  margin-right: 80px;
+}
+
 .page-footer-social-text {
   font-weight: 500;
   font-size: 16px;
@@ -564,6 +568,63 @@ body {
 
 .page-footer-social-list-svg {
   fill: var(--cloud);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.subscribe-input {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  background: transparent;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  margin-right: 24px;
+}
+
+.subscribe-input::placeholder {
+  color: var(--cloud);
+}
+
+.subscribe-button {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: var(--iris);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+
+  border: none;
+  display: flex;
+  justify-content: space-between;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background: var(--ocean);
 }
 
 .modal-overlay {
