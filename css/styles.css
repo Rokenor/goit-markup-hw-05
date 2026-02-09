@@ -574,7 +574,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap: 24px;
 }
 
 .subscribe-input {
@@ -590,11 +590,9 @@ body {
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: var(--white);
-
-  margin-right: 24px;
 }
 
 .subscribe-input::placeholder {
