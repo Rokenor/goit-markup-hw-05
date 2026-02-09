@@ -781,6 +781,39 @@ body {
   margin-bottom: 24px;
 }
 
+.original-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.original-checkbox + label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.original-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5em;
+  background-image: url('../images/icons.svg#checkbox');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  fill: var('--navy-blue');
+}
+.original-checkbox:checked + label::before {
+  border: none;
+  background-color: transparent;
+  background-image: url('../images/icons.svg#checkbox-checked');
+}
+
 .modal-consent-label {
   display: flex;
   font-size: 12px;
